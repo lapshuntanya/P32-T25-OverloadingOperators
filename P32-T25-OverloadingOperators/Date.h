@@ -11,7 +11,7 @@ class Date
 public:
 	//--------- КОНСТРУКТОРИ та ДЕСТРУКТОРИ ---------
 	Date(); // За замовчуванням - поточна дата
-	Date(int year, int month, int day); // З параметрами - задана дата	 
+	Date(int year , int month=1, int day=1); // З параметрами - задана дата	 
 
 	bool isLeapYear()const; //Перевірка на високосний рік
 	int monthDays()const; //Кількість днів за місяцем

@@ -1,7 +1,18 @@
-#include <iostream>
+#include "Date.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    Date d1;   //       9/9/2024
+    Date d2(2000, 1, 1); 
+
+    d1.showDate();
+    d2.showDate();
+
+    cout << "----------------------\n\n";
+    d1.nextDate();
+    d2.prevDate();
+
+    d1.showDate();
+    d2.showDate();
 }
 
