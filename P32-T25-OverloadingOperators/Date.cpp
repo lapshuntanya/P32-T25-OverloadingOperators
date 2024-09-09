@@ -54,7 +54,19 @@ void Date::nextDate(){
 }
 
 void Date::prevDate(){
-
+    if (month == 1 && day == 1) {
+        day = 31;
+        month = 12;
+        year--;
+    }
+    else if (day == 1)
+    {
+        month--;
+        day = monthDays();
+    }
+    else {
+        day--;
+    }
 }
 
 void Date::showDate() const
