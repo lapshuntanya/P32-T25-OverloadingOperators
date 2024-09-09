@@ -28,5 +28,12 @@ public:
 	int getMonth()const;
 	void setDay(int day);
 	int getDay()const;
+
+	//--------- ОПЕРАТОРИ ІНКРЕМЕНТУ ТА ДЕКРЕМЕНТУ ---------
+	Date& operator --(); // Префіксна форма декременту
+	Date operator --(int); // Постфіксна форма декременту
+	Date& operator ++ (); // Префіксна форма інкременту
+	Date operator ++ (int); // Постфіксна форма інкременту 
+
 };
 
