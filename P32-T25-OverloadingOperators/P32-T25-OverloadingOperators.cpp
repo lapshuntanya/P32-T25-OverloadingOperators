@@ -9,10 +9,13 @@ int main()
     d2.showDate();
 
     cout << "----------------------\n\n";
-    d1.nextDate();
-    d2.prevDate();
+    
+    d1++;   //d1.nextDate();
+    --d2;   //d2.prevDate();
 
     d1.showDate();
     d2.showDate();
+
+    cout << d1 << " " << d2 << endl;
 }
 

@@ -128,3 +128,21 @@ Date Date::operator++(int){
     this->nextDate();
     return tmp;
 }
+
+ostream& operator<<(ostream& os, const Date& t)
+{
+    os << t.day / 10 << t.day % 10 << "."
+        << t.month / 10 << t.month % 10 << "."
+        << t.year;
+    return os;
+}
+
+istream& operator>>(istream& is, Date& t)
+{
+    do    {
+        cout << "dd mm yyyy: ";
+        is >> t.day >> t.month >> t.day;
+    } while (!t.valid());
+
+    return is;
+}

@@ -35,5 +35,9 @@ public:
 	Date& operator ++ (); // Префіксна форма інкременту
 	Date operator ++ (int); // Постфіксна форма інкременту 
 
+
+	friend ostream& operator << (ostream& os, const Date& t);
+	friend istream& operator >> (istream& is, Date& t);
+
 };
 
