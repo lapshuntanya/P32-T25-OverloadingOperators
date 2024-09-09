@@ -71,6 +71,9 @@ void Date::prevDate(){
 
 void Date::showDate() const
 {
+    cout << "Day:   " << day << endl;
+    cout << "Month: " << month << endl;
+    cout << "Year:  " << year << endl;
 }
 
 bool Date::valid() const
