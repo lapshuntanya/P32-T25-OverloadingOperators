@@ -37,12 +37,24 @@ int Date::monthDays() const
     return 30;
 }
 
-void Date::nextDate()
-{
+void Date::nextDate(){
+    if (month == 12 && day == 31) {
+        month = 1;
+        day = 1;
+        year++;
+    }
+    else if (day == monthDays())
+    {
+        day = 1;
+        month++;
+    }
+    else {
+        day++;
+    }
 }
 
-void Date::prevDate()
-{
+void Date::prevDate(){
+
 }
 
 void Date::showDate() const
