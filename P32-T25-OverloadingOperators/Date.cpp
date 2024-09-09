@@ -141,7 +141,7 @@ istream& operator>>(istream& is, Date& t)
 {
     do    {
         cout << "dd mm yyyy: ";
-        is >> t.day >> t.month >> t.day;
+        is >> t.day >> t.month >> t.year;
     } while (!t.valid());
 
     return is;
